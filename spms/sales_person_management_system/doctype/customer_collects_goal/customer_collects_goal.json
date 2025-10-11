@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-17 11:04:47.900885",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "customer_mobile",
+  "customer_invoices",
+  "status",
+  "date",
+  "due_date",
+  "invoice_amount",
+  "outstanding_amount",
+  "amount_to_collect"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0639\u0645\u064a\u0644",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "customer.mobile_no",
+   "fieldname": "customer_mobile",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0645\u0648\u0628\u0627\u064a\u0644 \u0627\u0644\u0639\u0645\u064a\u0644",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "customer_invoices",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0641\u0627\u062a\u0648\u0631\u0629",
+   "options": "Sales Invoice",
+   "precision": "2",
+   "reqd": 1,
+   "width": "0"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "customer_invoices.grand_total",
+   "fieldname": "invoice_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "\u0642\u064a\u0645\u0629 \u0627\u0644\u0641\u0627\u062a\u0648\u0631\u0629",
+   "options": "Company:company:default_currency",
+   "precision": "2",
+   "read_only": 1,
+   "width": "0"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "customer_invoices.due_date",
+   "fieldname": "due_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0627\u0633\u062a\u062d\u0642\u0627\u0642",
+   "precision": "2",
+   "read_only": 1,
+   "width": "0"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "customer_invoices.outstanding_amount",
+   "fieldname": "outstanding_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "\u0642\u064a\u0645\u0629 \u0627\u0644\u0625\u0633\u062a\u062d\u0642\u0627\u0642",
+   "options": "Company:company:default_currency",
+   "precision": "2",
+   "read_only": 1,
+   "width": "0"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "customer_invoices.posting_date",
+   "fieldname": "date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0641\u0627\u062a\u0648\u0631\u0629",
+   "precision": "2",
+   "read_only": 1,
+   "width": "0"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "customer_invoices.status",
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u062d\u0627\u0644\u0629",
+   "precision": "2",
+   "read_only": 1,
+   "width": "0"
+  },
+  {
+   "columns": 1,
+   "fieldname": "amount_to_collect",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0645\u0637\u0644\u0648\u0628 \u062a\u062d\u0635\u064a\u0644\u0647",
+   "options": "Company:company:default_currency",
+   "precision": "2",
+   "reqd": 1,
+   "width": "0"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-11 13:15:17.339945",
+ "modified_by": "Administrator",
+ "module": "Sales Person Management System",
+ "name": "Customer Collects Goal",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

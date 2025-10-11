@@ -1,0 +1,283 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-09-12 17:03:59.115435",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "visit_info_section",
+  "naming_series",
+  "visit_goal",
+  "date",
+  "column_break_3",
+  "sales_person",
+  "sales_person_mobile",
+  "sales_person_territory",
+  "visited_doctor_section",
+  "column_break_11",
+  "doctor_name",
+  "department",
+  "class",
+  "doctor_mobile",
+  "customer_column",
+  "customer",
+  "territory",
+  "address",
+  "customer_mobile",
+  "section_break_ptqj",
+  "visiting_item",
+  "notes_section",
+  "note",
+  "location_section",
+  "longitude",
+  "latitude",
+  "my_location",
+  "current_address",
+  "image",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0632\u064a\u0627\u0631\u0629",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "visited_doctor_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Visiting",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fetch_from": "customer.territory",
+   "fieldname": "territory",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0645\u0646\u0637\u0642\u0629",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "doctor_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u062f\u0643\u062a\u0648\u0631",
+   "options": "Doctor",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "doctor_name.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0642\u0633\u0645",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "doctor_name.class",
+   "fieldname": "class",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0641\u0626\u0629",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u062f\u0643\u062a\u0648\u0631"
+  },
+  {
+   "fieldname": "location_section",
+   "fieldtype": "Section Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude",
+   "print_hide": 1,
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude",
+   "print_hide": 1,
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "my_location",
+   "fieldtype": "HTML",
+   "label": "Position",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "current_address",
+   "fieldtype": "Read Only",
+   "label": "Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "SPM-VIS-.YYYY.-",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "image"
+  },
+  {
+   "allow_on_submit": 1,
+   "fetch_from": "doctor_name.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0639\u0645\u064a\u0644",
+   "options": "Customer",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ptqj",
+   "fieldtype": "Section Break",
+   "label": "\u0627\u0635\u0646\u0627\u0641 \u0627\u0644\u0632\u064a\u0627\u0631\u0629"
+  },
+  {
+   "fieldname": "visiting_item",
+   "fieldtype": "Table",
+   "options": "Visiting Item"
+  },
+  {
+   "allow_on_submit": 1,
+   "fetch_from": "doctor_name.address",
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0639\u0646\u0648\u0627\u0646"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "sales_person.territory",
+   "fieldname": "sales_person_territory",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0645\u0646\u0637\u0642\u0629 \u0627\u0644\u0645\u0646\u062f\u0648\u0628",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "visit_goal.sales_person",
+   "fieldname": "sales_person",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0633\u0645 \u0645\u0646\u062f\u0648\u0628 \u0627\u0644\u0628\u0628\u0639",
+   "options": "Sales Person",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "sales_person.custom_mobile_no",
+   "fieldname": "sales_person_mobile",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0631\u0642\u0645 \u0645\u0646\u062f\u0648\u0628 \u0627\u0644\u0628\u064a\u0639",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer.mobile_no",
+   "fieldname": "customer_mobile",
+   "fieldtype": "Data",
+   "label": "\u0645\u0648\u0628\u0627\u064a\u0644 \u0627\u0644\u0639\u0645\u064a\u0644",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "doctor_name.doctor_mobile",
+   "fieldname": "doctor_mobile",
+   "fieldtype": "Data",
+   "label": "\u0645\u0648\u0628\u0627\u064a\u0644 \u0627\u0644\u062f\u0643\u062a\u0648\u0631",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "visit_goal",
+   "fieldtype": "Link",
+   "label": "\u0631\u0642\u0645 \u062e\u0637\u0629 \u0632\u064a\u0627\u0631\u0629",
+   "options": "Visit Goal",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "visit_info_section",
+   "fieldtype": "Section Break",
+   "label": "Visit Info"
+  },
+  {
+   "fieldname": "customer_column",
+   "fieldtype": "Column Break",
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0639\u0645\u064a\u0644"
+  }
+ ],
+ "links": [],
+ "modified": "2024-11-11 13:10:48.689903",
+ "modified_by": "Administrator",
+ "module": "Sales Person Management System",
+ "name": "Visiting",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

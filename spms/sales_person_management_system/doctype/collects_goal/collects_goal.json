@@ -1,0 +1,179 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-09-17 11:06:08.439025",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "sales_person",
+  "column_break_3",
+  "sales_person_mobile",
+  "territory",
+  "period_section",
+  "from",
+  "column_break_7",
+  "to",
+  "number_of_days",
+  "target_section",
+  "customer_collects_goal",
+  "section_break_13",
+  "column_break_cfjs",
+  "column_break_15",
+  "total_targets",
+  "section_break_zgkk",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "sales_person",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "\u0627\u0633\u0645 \u0645\u0646\u062f\u0648\u0628 \u0627\u0644\u0628\u064a\u0639",
+   "options": "Sales Person",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "period_section",
+   "fieldtype": "Section Break",
+   "label": "\u0645\u062f\u0629 \u0627\u0644\u062a\u062d\u0635\u064a\u0644"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "\u0645\u0646",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u064a",
+   "reqd": 1
+  },
+  {
+   "fieldname": "number_of_days",
+   "fieldtype": "Int",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u0623\u064a\u0627\u0645",
+   "read_only": 1
+  },
+  {
+   "fieldname": "target_section",
+   "fieldtype": "Section Break",
+   "label": "Target"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "customer_collects_goal",
+   "fieldtype": "Table",
+   "in_standard_filter": 1,
+   "label": "Customer Collects Goal",
+   "options": "Customer Collects Goal"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Collects Goal",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_targets",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "\u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0645\u0637\u0644\u0648\u0628 \u062a\u062d\u0635\u064a\u0644\u0647",
+   "options": "Company:company:default_currency",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "SPM-CG-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "sales_person.custom_mobile_no",
+   "fieldname": "sales_person_mobile",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0645\u0648\u0628\u0627\u064a\u0644 \u0627\u0644\u0645\u0646\u062f\u0648\u0628",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "sales_person.territory",
+   "fieldname": "territory",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0645\u0646\u0637\u0642\u0629",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_cfjs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_zgkk",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Collecting",
+   "link_fieldname": "amended_from"
+  }
+ ],
+ "modified": "2024-11-11 13:14:48.378148",
+ "modified_by": "Administrator",
+ "module": "Sales Person Management System",
+ "name": "Collects Goal",
+ "name_case": "UPPER CASE",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

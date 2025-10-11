@@ -1,0 +1,27 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-09-24 15:19:06.474708",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[],\"fields\":[[\"customer\",\"Collecting\"],[\"_aggregate_column\",\"Collecting\"]],\"order_by\":\"`tabCollecting`.`modified` desc\",\"add_totals_row\":true,\"page_length\":20,\"column_widths\":{\"customer\":120,\"_aggregate_column\":200},\"group_by\":{\"group_by\":\"`tabCollecting`.`customer`\",\"aggregate_function\":\"sum\",\"aggregate_on\":\"`tabCollecting`.`amount_other_currency`\"}}",
+ "modified": "2022-09-24 15:20:30.029220",
+ "modified_by": "Administrator",
+ "module": "Sales Person Management System",
+ "name": "Total Collecting By Customer Name",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Collecting",
+ "report_name": "Total Collecting By Customer Name",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

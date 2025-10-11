@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include spms *.css
+recursive-include spms *.csv
+recursive-include spms *.html
+recursive-include spms *.ico
+recursive-include spms *.js
+recursive-include spms *.json
+recursive-include spms *.md
+recursive-include spms *.png
+recursive-include spms *.py
+recursive-include spms *.svg
+recursive-include spms *.txt
+recursive-exclude spms *.pyc

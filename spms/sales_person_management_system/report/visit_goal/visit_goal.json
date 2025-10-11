@@ -1,0 +1,27 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-09-25 10:38:32.954826",
+ "disable_prepared_report": 1,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[[\"Visit Goal\",\"company\",\"=\",\"Airbnb\"]],\"fields\":[[\"name\",\"Visit Goal\"],[\"fullname\",\"Visit Goal\"],[\"company\",\"Visit Goal\"],[\"territory\",\"Visit Goal\"],[\"from\",\"Visit Goal\"],[\"to\",\"Visit Goal\"],[\"number_of_days\",\"Visit Goal\"],[\"doctor\",\"Doctor Visit Goal\"],[\"department\",\"Doctor Visit Goal\"],[\"reference\",\"Doctor Visit Goal\"],[\"class\",\"Doctor Visit Goal\"],[\"item\",\"Doctor Visit Goal\"],[\"number_of_visit\",\"Doctor Visit Goal\"],[\"verified_visits\",\"Doctor Visit Goal\"]],\"order_by\":\"`tabVisit Goal`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":164,\"fullname\":119,\"company\":120,\"territory\":120,\"from\":120,\"to\":103,\"number_of_days\":38,\"Doctor Visit Goal:doctor\":166,\"Doctor Visit Goal:department\":65,\"Doctor Visit Goal:reference\":120,\"Doctor Visit Goal:class\":30,\"Doctor Visit Goal:item\":110,\"Doctor Visit Goal:number_of_visit\":165,\"Doctor Visit Goal:verified_visits\":232},\"group_by\":null,\"chart_args\":{\"chart_type\":\"percentage\",\"x_axis\":\"Doctor Visit Goal:number_of_visit\",\"y_axes\":[\"Doctor Visit Goal:verified_visits\"]}}",
+ "modified": "2022-09-25 10:39:27.469254",
+ "modified_by": "Administrator",
+ "module": "Sales Person Management System",
+ "name": "Visit Goal",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Visit Goal",
+ "report_name": "Visit Goal",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

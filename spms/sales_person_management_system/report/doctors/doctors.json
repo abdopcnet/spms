@@ -1,0 +1,27 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-09-25 18:08:23.642093",
+ "disable_prepared_report": 1,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[],\"fields\":[[\"name\",\"Doctor\"],[\"full_name\",\"Doctor\"],[\"class\",\"Doctor\"],[\"department\",\"Doctor\"],[\"territory\",\"Doctor\"],[\"email\",\"Doctor\"],[\"address\",\"Doctor\"],[\"phone\",\"Doctor\"],[\"reference_name\",\"Doctor Reference\"]],\"order_by\":\"`tabDoctor`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"full_name\":120,\"class\":120,\"department\":120,\"territory\":120,\"email\":120,\"address\":120,\"phone\":120,\"Doctor Reference:reference_name\":120},\"group_by\":null}",
+ "modified": "2022-09-25 18:09:19.925434",
+ "modified_by": "Administrator",
+ "module": "Sales Person Management System",
+ "name": "Doctors",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Doctor",
+ "report_name": "Doctors",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

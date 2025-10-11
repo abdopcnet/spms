@@ -1,0 +1,232 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-09-17 11:06:48.820623",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "collects_goal",
+  "date",
+  "column_break_3",
+  "sales_person",
+  "sales_person_territory",
+  "sales_person_mobile",
+  "customer_details_section",
+  "customer",
+  "customer_group",
+  "customer_mobile",
+  "column_break_11",
+  "invoice_section_section",
+  "invoices",
+  "location_section",
+  "longitude",
+  "latitude",
+  "my_location",
+  "current_address",
+  "image",
+  "route",
+  "published",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062a\u062d\u0635\u064a\u0644",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Collecting",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Collecting",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer.customer_group",
+   "fieldname": "customer_group",
+   "fieldtype": "Data",
+   "label": "\u0645\u062c\u0645\u0648\u0639\u0629 \u0627\u0644\u0639\u0645\u064a\u0644",
+   "read_only": 1
+  },
+  {
+   "fieldname": "invoice_section_section",
+   "fieldtype": "Section Break",
+   "label": "\u0639\u0646 \u0627\u0644\u0641\u0648\u0627\u062a\u064a\u0631 \u0627\u0644\u0645\u062a\u0623\u062e\u0631\u0629"
+  },
+  {
+   "fieldname": "invoices",
+   "fieldtype": "Table",
+   "label": "Invoices",
+   "options": "Reference Invoice Collects"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "SPM-COL-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0644\u0639\u0645\u064a\u0644",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location_section",
+   "fieldtype": "Section Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "my_location",
+   "fieldtype": "HTML",
+   "label": "Position"
+  },
+  {
+   "fieldname": "current_address",
+   "fieldtype": "Read Only",
+   "label": "Address"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "image"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Route",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Published"
+  },
+  {
+   "fetch_from": "sales_person.territory",
+   "fieldname": "sales_person_territory",
+   "fieldtype": "Data",
+   "label": "\u0645\u0646\u0637\u0642\u0629 \u0627\u0644\u0645\u0646\u062f\u0648\u0628",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_person",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0645\u0646\u062f\u0648\u0628 \u0627\u0644\u0628\u064a\u0639",
+   "options": "Sales Person",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "sales_person.custom_mobile_no",
+   "fieldname": "sales_person_mobile",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0645\u0648\u0628\u0627\u064a\u0644 \u0627\u0644\u0645\u0646\u062f\u0648\u0628",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "customer.mobile_no",
+   "fieldname": "customer_mobile",
+   "fieldtype": "Data",
+   "label": "\u0645\u0648\u0628\u0627\u064a\u0644 \u0627\u0644\u0639\u0645\u064a\u0644",
+   "read_only": 1
+  },
+  {
+   "fieldname": "collects_goal",
+   "fieldtype": "Link",
+   "label": "\u062e\u0637\u0629 \u062a\u062d\u0635\u064a\u0644",
+   "options": "Collects Goal",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [
+  {
+   "link_doctype": "Payment Entry",
+   "link_fieldname": "company"
+  }
+ ],
+ "modified": "2024-11-10 13:24:13.168413",
+ "modified_by": "Administrator",
+ "module": "Sales Person Management System",
+ "name": "Collecting",
+ "name_case": "UPPER CASE",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "collecting",
+ "search_fields": "customer",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "customer"
+}
