@@ -1,5 +1,5 @@
 
-__version__ = '0.0.1'
+__version__ = "16.12.2025"
 
 from erpnext.controllers.selling_controller import SellingController
 # Use relative import instead of absolute import
